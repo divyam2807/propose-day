@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Will You Be Mine? ❤️</title>
+  <title>Kratika, Will You Be Mine? ❤️</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
@@ -24,19 +24,19 @@
       border-radius: 20px;
       padding: 40px;
       width: 90%;
-      max-width: 420px;
+      max-width: 430px;
       text-align: center;
       box-shadow: 0 20px 40px rgba(0,0,0,0.2);
       animation: fadeIn 1.2s ease;
     }
     h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
+      font-size: 2.1rem;
       margin-bottom: 10px;
     }
     p {
       font-size: 1.05rem;
-      margin-bottom: 30px;
+      margin-bottom: 28px;
       line-height: 1.6;
     }
     .buttons {
@@ -66,12 +66,10 @@
       color: #fff;
       position: relative;
     }
-    .hidden {
-      display: none;
-    }
+    .hidden { display: none; }
     .success {
       font-family: 'Playfair Display', serif;
-      font-size: 2rem;
+      font-size: 1.9rem;
       animation: pop 0.6s ease;
     }
     @keyframes fadeIn {
@@ -97,20 +95,31 @@
 </head>
 <body>
   <div class="card" id="card">
-    <h1>Hey ❤️</h1>
+    <h1>Hey Kratika ❤️</h1>
     <p>
-      From random smiles to late‑night talks,
-      you’ve become my favourite part of every day.
-      So today, I just want to ask you one thing…
+      Thoda sa filmy ho jaaun? 😌<br/><br/>
+      Random chats se leke late‑night baaton tak,
+      tu kab meri life ka sabse special part ban gayi,
+      mujhe pata hi nahi chala.
+      Tu saath ho toh har din thoda better lagta hai.
     </p>
-    <h1>Will you be mine? 💍</h1>
+    <h1>Iss Propose Day…</h1>
+    <p>
+      ek simple sa sawaal hai,<br/>
+      par dil se ❤️
+    </p>
+    <h1>Will you be mine, Kratika? 💍</h1>
     <div class="buttons" id="buttons">
-      <button id="yesBtn">Yes 😍</button>
-      <button id="noBtn">No 🙈</button>
+      <button id="yesBtn">Haan ❤️</button>
+      <button id="noBtn">Sochti hoon 🙈</button>
     </div>
     <div class="hidden" id="success">
-      <div class="success">Yay! ❤️🎉</div>
-      <p>Officially my favourite person now.</p>
+      <div class="success">Yay! ❤️🥹</div>
+      <p>
+        Toh officially…<br/>
+        tu meri favourite person ho 😌<br/>
+        Aur main tera, hamesha 💖
+      </p>
     </div>
   </div>
 
@@ -121,8 +130,8 @@
     const success = document.getElementById('success');
 
     noBtn.addEventListener('mouseover', () => {
-      const x = Math.random() * 200 - 100;
-      const y = Math.random() * 200 - 100;
+      const x = Math.random() * 220 - 110;
+      const y = Math.random() * 220 - 110;
       noBtn.style.transform = `translate(${x}px, ${y}px)`;
     });
 
@@ -133,7 +142,7 @@
     });
 
     function launchHearts() {
-      for (let i = 0; i < 25; i++) {
+      for (let i = 0; i < 30; i++) {
         const heart = document.createElement('div');
         heart.className = 'heart';
         heart.innerText = '❤️';
